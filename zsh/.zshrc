@@ -1,0 +1,5 @@
+alias broadway="cd ~/Documents/Projects/Stratpoint/globe-broadway-track4"
+alias myassets="cd ~/Documents/Projects/Stratpoint/myassets"
+alias broadway-grunt="broadway && grunt"
+alias yt="youtube-dl -x --audio-format wav"
+alias dev-start="sudo systemctl start nginx && sudo systemctl start php5.6-fpm && sudo systemctl start mysql"
