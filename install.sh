@@ -4,7 +4,7 @@ echo "upgrading..."
 apt upgrade
 
 echo "zsh install"
-apt install zsh zsh-completions
+apt install zsh
 echo "oh-my-zsh install"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -29,3 +29,5 @@ apt install fonts-powerline
 
 chsh -s $(which zsh)
 gnome-session-quit
+
+
