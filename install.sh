@@ -13,7 +13,7 @@ echo ./zsh/.zshrc >> ~/.zshrc
 # vim setup
 echo "vim setup"
 mkdir -p ./vim/.vim/bundle
-ln -s cp vim/.vim ~/.vim
+ln -s vim/.vim ~/.vim
 ln -s vim/.vimrc ~/.vimrc
 
 # vim packages
