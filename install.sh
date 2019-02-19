@@ -1,10 +1,10 @@
-echo "updating..."
+echo "updating apt..."
 apt update
-echo "upgrading..."
+echo "upgrading packages..."
 apt upgrade -y
 
-echo "zsh install"
-apt install zsh -y
+echo "vim and zsh install"
+apt install vim zsh -y
 echo "oh-my-zsh install"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -29,5 +29,4 @@ apt install fonts-powerline -y
 
 chsh -s $(which zsh)
 gnome-session-quit
-
 
