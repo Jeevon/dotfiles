@@ -1,3 +1,5 @@
+CWD="$(pwd)"
+
 echo "updating apt..."
 apt update
 echo "upgrading packages..."
@@ -8,14 +10,14 @@ apt install vim zsh -y
 echo "oh-my-zsh install..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-echo ./zsh/.zshrc >> ~/.zshrc
+echo "copying zshrc"
+ln -s $CWD/zsh/.zshrc ~/.zshrc
 
 # vim setup
 echo "creating vim directory..."
 mkdir -p ./vim/.vim/bundle
 
-echo "vim setup"
-CWD="$(pwd)"
+echo "copying vim setup"
 ln -s $CWD/vim/.vim ~/.vim
 ln -s $CWD/vim/.vimrc ~/.vimrc
 
@@ -31,5 +33,6 @@ echo "powerline fonts install..."
 apt install fonts-powerline -y
 
 chsh -s $(which zsh)
+source ~/.zshrc
 
 echo "Logout user to use zsh..."
