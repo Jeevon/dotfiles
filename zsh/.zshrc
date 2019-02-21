@@ -100,7 +100,7 @@ alias zshconfig="mate ~/.zshrc"
 alias php5-start="sudo systemctl start nginx && sudo systemctl start php5.6-fpm && sudo systemctl start mysql"
 alias php5-stop="sudo systemctl stop nginx && sudo systemctl stop php5.6-fpm && sudo systemctl stop mysql"
 
-alias php7-start="sudo systemctl start nginx && sudo service php7.2-fpm stop && sudo systemctl start mysql"
+alias php7-start="sudo systemctl start nginx && sudo service php7.2-fpm start && sudo systemctl start mysql"
 alias php7-stop="sudo systemctl stop nginx && sudo service php7.2-fpm stop && sudo systemctl stop mysql"
 
 
@@ -109,6 +109,7 @@ alias broadway="cd ~/Documents/Projects/Stratpoint/globe-broadway-track4"
 alias myassets="cd ~/Documents/Projects/Stratpoint/myassets"
 alias broadway-grunt="broadway && grunt"
 alias wehire="cd ~/Documents/Projects/wehire_recruitment"
+alias dotfiles="cd ~/Documents/dotfiles"
 
 # youtube dl
 alias ytd="youtube-dl --audio-quality 9"
