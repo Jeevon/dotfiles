@@ -97,6 +97,7 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias sysupdate="sudo apt update && sudo apt upgrade -y"
 alias php5-start="sudo systemctl start nginx && sudo systemctl start php5.6-fpm && sudo systemctl start mysql"
 alias php5-stop="sudo systemctl stop nginx && sudo systemctl stop php5.6-fpm && sudo systemctl stop mysql"
 
