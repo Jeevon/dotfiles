@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/jeevon/.oh-my-zsh"
+  export ZSH="/home/johnjeevonang/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -100,8 +100,11 @@ alias zshconfig="mate ~/.zshrc"
 alias php5-start="sudo systemctl start nginx && sudo systemctl start php5.6-fpm && sudo systemctl start mysql"
 alias php5-stop="sudo systemctl stop nginx && sudo systemctl stop php5.6-fpm && sudo systemctl stop mysql"
 
-alias php7-start="sudo systemctl start nginx && sudo service php7.2-fpm start && sudo systemctl start mysql"
-alias php7-stop="sudo systemctl stop nginx && sudo service php7.2-fpm stop && sudo systemctl stop mysql"
+alias php7-start="sudo systemctl start nginx && sudo service php7.0-fpm start && sudo systemctl start mysql"
+alias php7-stop="sudo systemctl stop nginx && sudo service php7.0-fpm stop && sudo systemctl stop mysql"
+
+alias php7.2-start="sudo systemctl start nginx && sudo service php7.2-fpm start && sudo systemctl start mysql"
+alias php7.2-stop="sudo systemctl stop nginx && sudo service php7.2-fpm stop && sudo systemctl stop mysql"
 
 
 # project shortcuts
@@ -110,10 +113,12 @@ alias myassets="cd ~/Documents/Projects/Stratpoint/myassets"
 alias broadway-grunt="broadway && grunt"
 alias wehire="cd ~/Documents/Projects/wehire_recruitment"
 alias dotfiles="cd ~/Documents/dotfiles"
+alias broadway-logs="sudo cat /var/log/nginx/broadway.globe.error.log";
 
 # youtube dl
 alias ytd="youtube-dl --audio-quality 9"
 alias ytdwav="youtube-dl -x --audio-format wav --audio-quality 9"
 
-export NVM_DIR="/home/jeevon/.nvm"
+
+export NVM_DIR="/home/johnjeevonang/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
