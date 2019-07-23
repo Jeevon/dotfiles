@@ -1,0 +1,32 @@
+#find
+f = find x in line
+t = find character before x in line
+
+#delete
+d = delete
+dw = delete word
+daw = delete all
+diw = delete in word
+da<symbol> = delete all inside and including the <symbol>
+di<symbol> = delete inside the symbole # ex. di" deletes "word" = ""
+dt<symbol> = delete until 
+
+#change
+c = change
+cw = change starting from pointer
+caw = change all word
+ciw = change in word
+ci<symbol> = change inside the symbole # ex. di" deletes "word" = ""
+ct<symbol> = change until 
+
+# dot command
+. = repeat previous motion
+
+# fold
+zf = create
+zm = collapse
+zr = uncollapse
+zM = collapse all
+zR = uncollapse all
+
+
