@@ -2,7 +2,7 @@
 f = find x in line
 t = find character before x in line
 
-#delete
+# delete
 d = delete
 dw = delete word
 daw = delete all
@@ -11,7 +11,7 @@ da<symbol> = delete all inside and including the <symbol>
 di<symbol> = delete inside the symbole # ex. di" deletes "word" = ""
 dt<symbol> = delete until 
 
-#change
+# change
 c = change
 cw = change starting from pointer
 caw = change all word
@@ -29,4 +29,8 @@ zr = uncollapse
 zM = collapse all
 zR = uncollapse all
 
+# easymotion
+,s<search>
 
+# emmet autocomplete
+ctrl+y+, = autocomplete

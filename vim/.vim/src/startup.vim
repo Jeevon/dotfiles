@@ -1,5 +1,8 @@
 set number
 set cursorline
+set autoindent
+set smartindent
+set nowrap
 " set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 " set list
 
@@ -10,6 +13,12 @@ filetype plugin indent on
 " NERDTree conf
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+
+" set map leader
+let mapleader=','
+
+" set max line highlight
+let &colorcolumn="80,".join(range(120,999),",")
 
 " close NERDTree after a file is opened
 let g:NERDTreeQuitOnOpen=1
@@ -29,3 +38,10 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+
+" Searching
+set ignorecase " case insensitive searching
+set incsearch " Incremental search
+
+set showmatch " show matching brace
+set mat=2
