@@ -34,3 +34,6 @@ zR = uncollapse all
 
 # emmet autocomplete
 ctrl+y+, = autocomplete
+
+# Prettier
+,p = Prettify
