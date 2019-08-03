@@ -5,5 +5,6 @@ https://github.com/scrooloose/nerdtree
 https://github.com/vim-airline/vim-airline
 https://github.com/vim-airline/vim-airline-themes
 https://github.com/easymotion/vim-easymotion
-https://github.com/tpope/vim-surround
-https://github.com/airblade/vim-gitgutter
+https://github.com/tpope/vim-fugitive
+https://github.com/scrooloose/syntastic
+https://github.com/prettier/vim-prettier
